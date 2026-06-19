@@ -5,6 +5,7 @@ html{
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
     font-family: monospace, Tahoma, Geneva, Verdana, sans-serif;
@@ -21,6 +22,8 @@ a{
 }
 .portfolio__header{
     width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 
 .portfolio__nav{
@@ -28,7 +31,15 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+}
+
+.portfolio__nav-inner{
+    width: min(100%, 1100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .portfolio__logo{
@@ -38,9 +49,12 @@ a{
 
 .portfolio__nav-list{
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
 }
 
 .portfolio__nav-item{
@@ -50,7 +64,9 @@ a{
 .portfolio__hero,
 .portfolio__about,
 .portfolio__projects{
-    padding: 1.5rem;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 2vw, 3rem);
 }
 
 .portfolio__hero h1, .portfolio__about h2, 
@@ -62,24 +78,25 @@ a{
 }
 
 .portfolio__hero h1{
-    font-size: 3rem;
+    font-size: clamp(2.6rem, 4vw, 4rem);
 }
 
 .portfolio__about h2, 
 .portfolio__projects h2{
-    font-size: 2.5rem;
+    font-size: clamp(2.2rem, 3vw, 3rem);
 }
 .portfolio__projects h3{
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 2.5vw, 2.4rem);
 }
 
 .portfolio__hero article,
 .portfolio__about p,
 .portfolio__projects p{
-    font-size: 1.4rem;
+    width: min(100%,70ch);
+    margin: 20px auto 0;
+    font-size: clamp(1.4rem, 1.4vw, 1.8rem);
     text-align: center;
     color: #333;
-    margin-top: 20px;
 }
 
 .portfolio__project{
@@ -91,16 +108,22 @@ a{
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 100%;
+      max-width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
 }
 .portfolio__projects-container{
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1.5rem, 2vw, 2.5rem);
+    align-items: start;
 }
 
 .portfolio__project-image{
-    max-width: 100%; 
-    height: auto;    
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     display: block;
     padding: 5px;
 }
@@ -109,13 +132,14 @@ a{
     text-transform: capitalize;
 }
 
-
 .portfolio__project-buttons-container{
     display: flex;
-    flex-direction: row;    /* ¡Aquí está el truco! Botones lado a lado */
-    gap: 2rem;              /* Espacio uniforme entre botones */
-    margin: 20px 0;             /* Espacio vertical entre el texto y los botones */
-    padding: 5px;              /* Espacio interno para que los botones no estén pegados al borde del proyecto */ 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px 0;
+    padding: 5px;
 }
 
 .portfolio__project-buttons-container button{
@@ -125,6 +149,7 @@ a{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    min-width: 12rem;
 }
 
 .portfolio__project-buttons-container a{
