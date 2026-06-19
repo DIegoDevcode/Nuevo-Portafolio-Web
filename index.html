@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,81 +8,100 @@
     <title>Mi nuevo portafolio web</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="portfolio">
     <header class="portfolio__header">
         <nav class="portfolio__nav" aria-label="Navegacion Principal">
-            <ul class="portfolio__nav-list">
+            <div class="portfolio__nav-inner">
                 <div class="portfolio__logo">
                     <img src="favicon.ico" alt="Logo del portafolio" class="portfolio__logo-image">
                 </div>
-                <li class="portfolio__nav-item">Inicio</li>
-                <li class="portfolio__nav-item">Sobre Mi</li>
-                <li class="portfolio__nav-item">Proyectos</li>
-                <li class="portfolio__nav-item">Contacto</li>
-            </ul>
+
+                <ul class="portfolio__nav-list">
+                    <li class="portfolio__nav-item">Inicio</li>
+                    <li class="portfolio__nav-item">Sobre Mi</li>
+                    <li class="portfolio__nav-item">Proyectos</li>
+                    <li class="portfolio__nav-item">Contacto</li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="portfolio__hero">
             <h1>Bienvenido a mi portafolio web</h1>
-            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius voluptatem dicta dolorum provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam aperiam neque at rerum quis facere amet esse.</article>
+            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius voluptatem dicta
+                dolorum provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam aperiam neque at rerum
+                quis facere amet esse.</article>
         </div>
         <section class="portfolio__about">
             <h2>Sobre Mí</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius voluptatem dicta dolorum provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam aperiam neque at rerum quis facere amet esse.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius voluptatem dicta dolorum
+                provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam aperiam neque at rerum quis
+                facere amet esse.</p>
         </section>
         <section class="portfolio__projects">
             <h2 class="portfolio__projects-title">Proyectos</h2>
-            <p class="portfolio__projects-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius voluptatem dicta dolorum provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam aperiam neque at rerum quis facere amet esse.</p>
+            <p class="portfolio__projects-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+                eius voluptatem dicta dolorum provident asperiores quos laudantium, obcaecati sequi ex pariatur aliquam
+                aperiam neque at rerum quis facere amet esse.</p>
             <article class="portfolio__projects-container">
                 <div class="portfolio__project">
                     <h3>Google Clone</h3>
-                    <img src="./Imagenes/Google-clone.webp" loading="lazy" alt="Imagen del proyecto Google Clone" class="portfolio__project-image">
-                    <p>Este fue mi primer proyecto como desarrollador frontend. Es una réplica de la página de inicio de Google Chrome, un sitio web
-                    estático creado con HTML y CSS. Diseñé este proyecto para poner en práctica los conocimientos que había adquirido.</p>
+                    <img src="./Imagenes/Google-clone.webp" loading="lazy" alt="Imagen del proyecto Google Clone"
+                        class="portfolio__project-image">
+                    <p>Este fue mi primer proyecto como desarrollador frontend. Es una réplica de la página de inicio de
+                        Google Chrome, un sitio web
+                        estático creado con HTML y CSS. Diseñé este proyecto para poner en práctica los conocimientos
+                        que había adquirido.</p>
                     <div class="portfolio__project-buttons-container">
                         <button><a href="https://github.com/DIegoDevcode/googleclone.github.io">Codigo</a></button>
-                        <button><a href="">En mantenimiento</a>  </button>
+                        <button><a href="">En mantenimiento</a> </button>
                     </div>
                 </div>
                 <div class="portfolio__project">
                     <h3>Eco Store Sass</h3>
-                    <img src="./Imagenes/Eco-store-sass.webp" loading="lazy" alt="Imagen del proyecto Eco Store Sass" class="portfolio__project-image">
+                    <img src="./Imagenes/Eco-store-sass.webp" loading="lazy" alt="Imagen del proyecto Eco Store Sass"
+                        class="portfolio__project-image">
                     <p>Eco Store es una página web que simula una tienda en línea,
-                    ofreciendo una amplia variedad de productos ecológicos para
-                    ayudarte a vivir de manera más sostenible y respetuosa con el
-                    medio ambiente. Este sitio web fue construido con HTML, CSS y
-                    Sass.</p>
+                        ofreciendo una amplia variedad de productos ecológicos para
+                        ayudarte a vivir de manera más sostenible y respetuosa con el
+                        medio ambiente. Este sitio web fue construido con HTML, CSS y
+                        Sass.</p>
                     <div class="portfolio__project-buttons-container">
                         <button><a href="https://github.com/DIegoDevcode/eco-store-sass">Codigo</a></button>
-                        <button><a href="">proximamente</a>  </button>
+                        <button><a href="">proximamente</a> </button>
                     </div>
                 </div>
                 <div class="portfolio__project">
                     <h3>Proyecto 3</h3>
-                    <img src="./Imagenes/platzi-travel-tailwind.webp" alt="Imagen del proyecto Platzi Travel Tailwind" class="portfolio__project-image">
+                    <img src="./Imagenes/platzi-travel-tailwind.webp" alt="Imagen del proyecto Platzi Travel Tailwind"
+                        class="portfolio__project-image">
                     <p>Este proyecto es una representación de un sitio web de reserva de
-                    viajes donde los usuarios pueden explorar destinos, y planificar
-                    sus próximas vacaciones. Este es el primer proyecto que tiene modo
-                    oscuro. Esta construido con el framework Tailwind css y html. Se
-                    uso las propiedades de css, display grid y flex, para la
-                    organización de las cards.</p>
+                        viajes donde los usuarios pueden explorar destinos, y planificar
+                        sus próximas vacaciones. Este es el primer proyecto que tiene modo
+                        oscuro. Esta construido con el framework Tailwind css y html. Se
+                        uso las propiedades de css, display grid y flex, para la
+                        organización de las cards.</p>
                     <div class="portfolio__project-buttons-container">
                         <button><a href="https://github.com/DIegoDevcode/Platzi-travel-tailwindcss">Codigo</a></button>
-                        <button><a href="">proximamente</a>  </button>
+                        <button><a href="">proximamente</a> </button>
                     </div>
                 </div>
                 <div class="portfolio__project">
                     <h3>Tailwind Mario 3D World Clone</h3>
-                    <img src="./Imagenes/Tailwind-mario-3dland.webp" alt="Imagen del proyecto Tailwind Mario 3D World Clone" class="portfolio__project-image">
-                    <p>Esta es una homepage que recrea la pagina principal del videojuego Super Mario 3D land. Esta hecha con html y para la creación de los estilos se uso el framework tailwind css.</p>
+                    <img src="./Imagenes/Tailwind-mario-3dland.webp"
+                        alt="Imagen del proyecto Tailwind Mario 3D World Clone" class="portfolio__project-image">
+                    <p>Esta es una homepage que recrea la pagina principal del videojuego Super Mario 3D land. Esta
+                        hecha con html y para la creación de los estilos se uso el framework tailwind css.</p>
                     <div class="portfolio__project-buttons-container">
-                        <button><a href="https://github.com/DIegoDevcode/Tailwind-mario3DWorld-clone">Codigo</a></button>
-                        <button><a href="">proximamente</a>  </button>
+                        <button><a
+                                href="https://github.com/DIegoDevcode/Tailwind-mario3DWorld-clone">Codigo</a></button>
+                        <button><a href="">proximamente</a> </button>
                     </div>
                 </div>
             </article>
         </section>
     </main>
 </body>
+
 </html>
