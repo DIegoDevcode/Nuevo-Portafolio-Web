@@ -140,27 +140,38 @@ a{
 }
 
 .portfolio__project-buttons-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 20px 0;
-    padding: 5px;
-}
-
-.portfolio__project-buttons-container button{
-    padding: 10px 20px;
-    font-size: 1.5rem;
-    background-color: chocolate;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    min-width: 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .portfolio__project-buttons-container a{
-    color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12rem;
+  min-height: 44px;
+  padding: 12px 22px;
+  background-color: chocolate;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.portfolio__project-buttons-container a:hover{
+    animation: scale-in-center 0.5s both;
+}
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.portfolio__project-buttons-container a:focus-visible{
+    animation: scale-in-center 0.5s both;
 }
 
 @media (min-width: 768px) {
